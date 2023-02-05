@@ -1,0 +1,51 @@
+@import './mixins';
+
+.container{
+    .slides-container{
+        .slide{
+            width: 100vw;
+            height: 100vh;
+            background-size: 100%;
+            background: no-repeat center / cover;
+            display: grid;
+            justify-items: start;
+            align-content: center;
+            .slide-text-container{
+                margin-left: 5%;
+            }
+        }
+    
+        h3{
+            @include h3-style;
+        }
+        h2 {
+            @include h2-style;
+        }
+        h5{
+            @include h5-style;
+            position: relative;
+        }
+        h5::before {
+            content: '';
+            border: 1px solid $base-text-color ;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: calc(50% - 5px);
+            left: -15px
+        }
+        h5::after {
+            content: '';
+            border-bottom: 1px solid $base-text-color ;
+            width: 23%;
+            height: 1px;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        p{
+            @include description;
+        }
+    }
+}

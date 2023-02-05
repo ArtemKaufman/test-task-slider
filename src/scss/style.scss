@@ -1,0 +1,26 @@
+@import './components/reset.css';
+@import './components/variable';
+@import './components/slider.scss';
+@import './components/mixins';
+@import './components/arrows.scss';
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+html,body{
+    font-size: 10px;
+}
+@media(max-width: 768px){
+
+    html,body{
+        font-size: 5px;
+    }
+}
+@media(max-width: 992px){
+
+    html,body{
+        font-size: 7px;
+    }
+}
+
+
+

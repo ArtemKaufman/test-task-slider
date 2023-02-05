@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+    <title>Glide-Slider</title>
+</head>
+<body>
+
+    <section class="container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+
+              <ul class= "glide__slides slides-container">
+                <!-- Slides -->
+                <li class="glide__slide slide"  style="background-image: url('./src/img/first-slide.png')">
+                    <div class="slide-text-container">
+                        <h3>OUR VISION</h3>
+                        <h2>DESIGN</h2>
+                        <p>It is a long established fact that a reader will be distracted<br/> by the readable content of a page when looking at its <br/>layout. The point of using Lorem Ipsum.</p>
+                        <h5>Take A Look</h5>
+                    </div>
+                </li>
+                <li class="glide__slide slide" style="background-image: url('./src/img/second-slide.png')">
+                    <div class="slide-text-container">
+                        <h3>OUR VISION</h3>
+                        <h2>MOTION</h2>
+                        <p>It is a long established fact that a reader will be distracted<br/> by the readable content of a page when looking at its <br/>layout. The point of using Lorem Ipsum.</p>
+                        <h5>Take A Look</h5>
+                    </div>
+                    
+                </li>
+                <li class="glide__slide slide" style="background-image: url('./src/img/third-slide.png')">
+                    <div class="slide-text-container">
+                        <h3>OUR VISION</h3>
+                        <h2>ENGINE</h2>
+                        <p>It is a long established fact that a reader will be distracted<br/> by the readable content of a page when looking at its <br/>layout. The point of using Lorem Ipsum.</p>
+                        <h5>Take A Look</h5>    
+                    </div>
+                </li>
+              </ul>
+                 <!-- Arrows control -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left " id="btn-prev" data-glide-dir="&lt;">
+                        <img src="./src/img/navigation/Arrow 1.png" alt="prev">
+                    </button>
+
+                    <button class="glide__arrow glide__arrow--right " id="btn-next" data-glide-dir=">">
+                        <img src="./src/img/navigation/Arrow 2.png" alt="next">
+                    </button>
+                  </div>
+                <!-- Arrows control -->
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./dist/js/index.js"></script>
+</body>
+</html>
